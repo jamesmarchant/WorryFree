@@ -1,2 +1,7 @@
 <h2>My Worries</h2>
-{{outlet}}
+
+<ul>
+  {{#each model as |worry|}}
+    <li>{{worry}}</li>
+  {{/each}}
+</ul>
