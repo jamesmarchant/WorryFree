@@ -1,4 +1,4 @@
-![Build Status](https://circleci.com/gh/jamesmarchant/WorryFree.png?circle-token=:circle-token)
+![Build Status](https://circleci.com/gh/jamesmarchant/WorryFree.png?&style=shield&circle-token=:circle-token)
 
 
 # worry-free
