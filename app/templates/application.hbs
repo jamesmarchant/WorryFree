@@ -14,16 +14,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <span class="visible-xs navbar-brand">Sidebar menu</span>
+          <span class="visible-xs navbar-brand">Worry Menu</span>
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
           <ul class="nav navbar-nav">
-            {{#link-to 'about'}}
-            <li>About</li>
-            {{/link-to}}
-            {{#link-to 'my_worries'}}
-            <li>My Worries</li>
-            {{/link-to}}
+            
+            <li>{{#link-to 'my_worries'}}My Worries{{/link-to}}</li>
+            <li>{{#link-to 'about'}}About{{/link-to}}</li>
+            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
