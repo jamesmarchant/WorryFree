@@ -1,3 +1,5 @@
+[![Build Status](https://circleci.com/gh/jamesmarchant/WorryFree)](https://circleci.com/gh/jamesmarchant/WorryFree)
+
 # worry-free
 
 This README outlines the details of collaborating on this Ember application.
