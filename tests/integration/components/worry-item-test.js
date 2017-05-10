@@ -23,4 +23,5 @@ test('it renders', function(assert) {
   assert.equal(this.$('.item .item-title').text(), 'test-title', 'test-title');
   assert.equal(this.$('.item .item-type').text().trim(), 'real');
   assert.equal(this.$('.item .text-description').text().trim(), 'test-description');
+  this.will.fail;
 });
