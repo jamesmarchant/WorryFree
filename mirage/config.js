@@ -36,9 +36,9 @@ export default function() {
           attributes: {
             real: false,
             title: 'People not liking me',
-            description: 'I dont know if people like me or not'
-            //created: new Date().toString(),
-            //deadline: new Date().toString()
+            description: 'I dont know if people like me or not',
+            created: new Date(),
+            deadline: null
           }
         },
          {
@@ -47,9 +47,9 @@ export default function() {
           attributes: {
             real: true,
             title: 'I am not Healthy',
-            description: 'I dont think I eat Healthy food or excercise enough'
-            //created: new Date().toString(),
-            //deadline: new Date().toString()
+            description: 'I dont think I eat Healthy food or excercise enough',
+            created: new Date(),
+            deadline: new Date()
           }
         }
       ]

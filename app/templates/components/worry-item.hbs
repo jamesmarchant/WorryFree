@@ -10,7 +10,14 @@
 	<div class="panel panel-default description">
 		<div class="panel-body">
 			<p class="text-description">{{worry.description}}</p>
-			{{!-- <span>Date:</span>{{worry-item-date worry.created}} --}}
+			<div class="worry-date">
+				<strong>Date: </strong>{{worry-item-date worry.created}}<br/>
+			</div>
+			{{#if worry.deadline}}
+				<div class="worry-date">
+					<strong>Deadline: </strong>{{worry-item-date worry.created}}
+				</div>
+			{{/if}}
 		</div>
 	</div>
 </article>
