@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
 	title: DS.attr('string'),
 	description: DS.attr('string'),
-	created: DS.attr('date'),
-	deadline: DS.attr('date'),
+	//created: DS.attr('string'),
+	//deadline: DS.attr('string'),
 	real: DS.attr('boolean')
 });

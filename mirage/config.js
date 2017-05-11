@@ -27,23 +27,30 @@ export default function() {
   */
   this.namespace = '/api';
 
-  this.get('/rentals', function() {
+  this.get('/worries', function() {
     return {
       data: [
         {
+          type: "worries",
           id: 'uuidrandom',
-          type: 'hypothetical',
-          title: 'People not liking me',
-          description: 'I dont know if people like me or not',
-          date: Date.now(),
+          attributes: {
+            real: false,
+            title: 'People not liking me',
+            description: 'I dont know if people like me or not'
+            //created: new Date().toString(),
+            //deadline: new Date().toString()
+          }
         },
-        {
-          id: 'uuidrandom1',
-          type: 'real',
-          title: 'Not Eating Healthy',
-          description: 'I dont think I eat healty food',
-          date: Date.now(),
-          deadline: new Date(Date.now() + (1000 /*sec*/ * 60 /*min*/ * 60 /*hour*/ * 24 /*day*/ * 10))
+         {
+          type: "worries",
+          id: 'uuidrandom',
+          attributes: {
+            real: true,
+            title: 'I am not Healthy',
+            description: 'I dont think I eat Healthy food or excercise enough'
+            //created: new Date().toString(),
+            //deadline: new Date().toString()
+          }
         }
       ]
     };

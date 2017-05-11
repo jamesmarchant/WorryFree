@@ -1,12 +1,16 @@
 <article class="item well">
 	<h3 class="item-title">{{worry.title}}</h3>
 	<div class="detail item-type">
-		<strong>{{worry.type}}</strong> 
+		{{#if worry.real}}
+			<strong>Real</strong> 
+		{{else}}
+			<strong>Hypothetical</strong>
+		{{/if}} 
 	</div>
 	<div class="panel panel-default description">
 		<div class="panel-body">
 			<p class="text-description">{{worry.description}}</p>
-			<span>Date:</span>{{worry-item-date worry.date}}
+			{{!-- <span>Date:</span>{{worry-item-date worry.created}} --}}
 		</div>
 	</div>
 </article>
